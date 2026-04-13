@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
-    <mxGraphModel dx="1299" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="1452" dy="978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -229,6 +229,156 @@
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-117" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(102, 102, 102); font-family: Helvetica; font-size: 12px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;&quot;How much did I spend this month?&quot;&lt;/span&gt;" vertex="1">
           <mxGeometry height="40" width="230" x="1530" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-129" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;verticalAlign=middle;" value="User" vertex="1">
+          <mxGeometry height="50" width="320" x="1670" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-130" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=2;fontColor=#666666;" value="&quot;Pay my monthly bills&quot;" vertex="1">
+          <mxGeometry height="25" width="240" x="1710" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-131" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-129" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#6c8ebf;" target="miOBHmA825eAL7M7G_0Z-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-132" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;fontStyle=1;verticalAlign=top;spacingTop=5;arcSize=8;" value="FastMCP" vertex="1">
+          <mxGeometry height="110" width="540" x="1560" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-133" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Egune LLM interprets intent" vertex="1">
+          <mxGeometry height="30" width="190" x="1580" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-134" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-133" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;" target="miOBHmA825eAL7M7G_0Z-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-135" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" value="→ &quot;pay_monthly_bills&quot;" vertex="1">
+          <mxGeometry height="30" width="180" x="1800" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-136" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="FastMCP Client calls n8n MCP endpoint" vertex="1">
+          <mxGeometry height="25" width="400" x="1580" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-137" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-132" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#9673a6;" target="miOBHmA825eAL7M7G_0Z-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-138" connectable="0" parent="miOBHmA825eAL7M7G_0Z-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#9673a6;fontStyle=2;" value="MCP tool call" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-139" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;verticalAlign=top;spacingTop=5;arcSize=8;" value="n8n Workflow" vertex="1">
+          <mxGeometry height="100" width="640" x="1510" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-140" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9e0a5;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="MCP Server&#xa;Trigger" vertex="1">
+          <mxGeometry height="40" width="100" x="1650" y="441" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-141" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-140" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-142" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9e0a5;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="HTTP Request&#xa;fetch bills" vertex="1">
+          <mxGeometry height="40" width="120" x="1780" y="441" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-143" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-142" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-144" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" value="Code Node&#xa;calls FastMCP&#xa;confirm_payment" vertex="1">
+          <mxGeometry height="52" width="140" x="1930" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-145" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-139" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#d6b656;" target="miOBHmA825eAL7M7G_0Z-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-146" connectable="0" parent="miOBHmA825eAL7M7G_0Z-145" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#d6b656;fontStyle=3;" value="ctx.elicit() fires" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-147" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;arcSize=8;" value="Elicitation — User Confirmation" vertex="1">
+          <mxGeometry height="120" width="620" x="1520" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-148" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];strokeColor=none;fillColor=none;fontSize=11;fontColor=#666666;" value="Chat UI shows:" vertex="1">
+          <mxGeometry height="25" width="100" x="1540" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-149" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=3;" value="&quot;Confirm payment of 150,000₮ to 3 billers?&quot;" vertex="1">
+          <mxGeometry height="35" width="310" x="1640" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-150" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;fontColor=#82b366;" value="→ User clicks &quot;Confirm&quot;" vertex="1">
+          <mxGeometry height="25" width="160" x="1540" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-151" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];strokeColor=none;fillColor=none;fontSize=11;fontColor=#666666;" value="→ Result sent back to n8n Code node" vertex="1">
+          <mxGeometry height="25" width="230" x="1710" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-152" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-147" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-153" connectable="0" parent="miOBHmA825eAL7M7G_0Z-152" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#82b366;fontStyle=2;" value="approved = true" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-154" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;verticalAlign=top;spacingTop=5;arcSize=8;" value="n8n Workflow continues" vertex="1">
+          <mxGeometry height="100" width="680" x="1490" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-155" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b9e0a5;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="IF Node&#xa;approved?" vertex="1">
+          <mxGeometry height="50" width="90" x="1730" y="742" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-156" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-155" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-157" connectable="0" parent="miOBHmA825eAL7M7G_0Z-156" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontStyle=1;fontColor=#82b366;" value="YES" vertex="1">
+          <mxGeometry relative="1" x="-0.3" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-158" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9e0a5;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="HTTP Request&#xa;execute payment" vertex="1">
+          <mxGeometry height="40" width="130" x="1860" y="747" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-159" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-158" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-160" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9e0a5;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="Respond&#xa;&quot;Paid 3 bills,&#xa;total 150,000₮&quot;" vertex="1">
+          <mxGeometry height="52" width="130" x="2030" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-161" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-155" style="rounded=1;exitX=0;exitY=0.5;strokeWidth=1.5;strokeColor=#b85450;dashed=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="miOBHmA825eAL7M7G_0Z-163">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1710" y="766" />
+            </Array>
+            <mxPoint x="1810" y="802" as="sourcePoint" />
+            <mxPoint x="1525" y="785.8139534883724" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-162" connectable="0" parent="miOBHmA825eAL7M7G_0Z-161" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontStyle=1;fontColor=#b85450;" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.3" as="geometry">
+            <mxPoint x="-2" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-163" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=2;" value="&quot;Payment cancelled&quot;" vertex="1">
+          <mxGeometry height="30" width="140" x="1510" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-164" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-154" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#82b366;" target="miOBHmA825eAL7M7G_0Z-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-165" connectable="0" parent="miOBHmA825eAL7M7G_0Z-164" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#82b366;fontStyle=2;" value="result" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-166" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;fontStyle=1;verticalAlign=top;spacingTop=5;arcSize=8;" value="FastMCP" vertex="1">
+          <mxGeometry height="80" width="540" x="1560" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-167" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Receives result from n8n" vertex="1">
+          <mxGeometry height="30" width="220" x="1580" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-168" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-167" style="rounded=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;" target="miOBHmA825eAL7M7G_0Z-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-169" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Returns confirmation to chat UI" vertex="1">
+          <mxGeometry height="30" width="250" x="1830" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-170" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-166" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#6c8ebf;" target="miOBHmA825eAL7M7G_0Z-171">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-171" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;verticalAlign=middle;" value="Chat UI" vertex="1">
+          <mxGeometry height="50" width="320" x="1670" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-172" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=2;fontColor=#666666;" value="&quot;Paid 3 bills. Total: 150,000₮. Remaining balance: 320,000₮&quot;" vertex="1">
+          <mxGeometry height="25" width="410" x="1620" y="1040" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
