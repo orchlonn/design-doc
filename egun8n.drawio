@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
-    <mxGraphModel dx="1763" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="1543" dy="1039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -534,7 +534,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-224" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Egune LLM interprets intent → &quot;pay monthly bills&quot;" vertex="1">
-          <mxGeometry height="30" width="480" x="880" y="2073" as="geometry" />
+          <mxGeometry height="30" width="380" x="880" y="2073" as="geometry" />
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-225" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-226">
           <mxGeometry relative="1" as="geometry">
@@ -564,7 +564,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-230" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="[MCP Server Trigger] → [HTTP Request: fetch bills]" vertex="1">
-          <mxGeometry height="30" width="500" x="910" y="2213" as="geometry" />
+          <mxGeometry height="30" width="390" x="910" y="2213" as="geometry" />
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-231" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-232">
           <mxGeometry relative="1" as="geometry">
@@ -574,7 +574,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-232" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ [Code node: calls FastMCP confirm payment tool]" vertex="1">
-          <mxGeometry height="30" width="500" x="910" y="2248" as="geometry" />
+          <mxGeometry height="30" width="390" x="910" y="2248" as="geometry" />
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-233" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-234">
           <mxGeometry relative="1" as="geometry">
@@ -594,7 +594,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-236" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ Chat UI shows: &quot;Confirm payment of 150,000₮ to 3 billers?&quot;" vertex="1">
-          <mxGeometry height="30" width="560" x="910" y="2353" as="geometry" />
+          <mxGeometry height="30" width="450" x="910" y="2353" as="geometry" />
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-237" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-238">
           <mxGeometry relative="1" as="geometry">
@@ -634,7 +634,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-244" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="[IF node: approved?] → YES → [HTTP Request: execute payment]" vertex="1">
-          <mxGeometry height="30" width="570" x="910" y="2528" as="geometry" />
+          <mxGeometry height="30" width="460" x="910" y="2528" as="geometry" />
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-245" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-246">
           <mxGeometry relative="1" as="geometry">
