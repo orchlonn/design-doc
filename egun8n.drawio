@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
-    <mxGraphModel dx="748" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="949" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -109,6 +109,36 @@
             <mxPoint x="290" y="550" as="sourcePoint" />
             <mxPoint x="290" y="553" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Courier New;fontSize=13;" value="Chat UI" vertex="1">
+          <mxGeometry height="40" width="160" x="420" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-10" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-9" style="edgeStyle=orthogonalEdgeStyle;" target="miOBHmA825eAL7M7G_0Z-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="180" width="360" x="320" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-12" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=13;fontStyle=1;align=left;" value="FastMCP (one Python service)" vertex="1">
+          <mxGeometry height="24" width="320" x="330" y="1248" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-13" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=12;align=left;" value="LLM reasoning (calls Egune model API)" vertex="1">
+          <mxGeometry height="24" width="300" x="370" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-14" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=12;align=left;" value="MCP Client (calls n8n workflows)" vertex="1">
+          <mxGeometry height="24" width="300" x="370" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-15" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=12;align=left;" value="ctx.elicit() (asks user questions mid-flow)" vertex="1">
+          <mxGeometry height="24" width="300" x="370" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-16" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=12;align=left;" value="Auth, sessions, tool registry" vertex="1">
+          <mxGeometry height="24" width="300" x="370" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-22" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-11" style="edgeStyle=orthogonalEdgeStyle;" target="miOBHmA825eAL7M7G_0Z-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;fontSize=13;" value="n8n (workflow execution only)" vertex="1">
+          <mxGeometry height="40" width="280" x="360" y="1480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
