@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
+    <mxGraphModel dx="1299" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Courier New;" value="User (chat UI)" vertex="1">
+          <mxGeometry height="40" width="160" x="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-2" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-1" style="edgeStyle=orthogonalEdgeStyle;" target="Ntr-GkQIgR_MQodv15UP-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontFamily=Courier New;" value="Equne Orchestrator" vertex="1">
+          <mxGeometry height="40" width="200" x="180" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-4" parent="1" style="text;html=1;align=left;fontFamily=Courier New;fontSize=11;" value="registers elicit handler&#xa;surfaces prompts to chat UI" vertex="1">
+          <mxGeometry height="40" width="260" x="450" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-5" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-4" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;" target="Ntr-GkQIgR_MQodv15UP-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-6" parent="1" style="text;html=1;align=left;fontFamily=Courier New;fontSize=11;" value="MCP tool call" vertex="1">
+          <mxGeometry height="20" width="140" x="190" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-7" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-3" style="edgeStyle=orthogonalEdgeStyle;" target="Ntr-GkQIgR_MQodv15UP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New;fontSize=12;fontStyle=1;verticalAlign=top;" value="n8n workflow (MCP Server Trigger exposed)" vertex="1">
+          <mxGeometry height="380" width="560" x="170" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;" value="Fetch data node" vertex="1">
+          <mxGeometry height="36" width="160" x="210" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-10" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;" value="drag &amp; drop" vertex="1">
+          <mxGeometry height="20" width="100" x="390" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;" value="Transform node" vertex="1">
+          <mxGeometry height="36" width="160" x="210" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-12" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;" value="drag &amp; drop" vertex="1">
+          <mxGeometry height="20" width="100" x="390" y="452" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;" value="Code node" vertex="1">
+          <mxGeometry height="36" width="140" x="210" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Courier New;" value="FastMCP server" vertex="1">
+          <mxGeometry height="36" width="180" x="490" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-15" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-13" style="edgeStyle=orthogonalEdgeStyle;fontFamily=Courier New;fontSize=11;" target="Ntr-GkQIgR_MQodv15UP-14" value="HTTP POST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-16" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;align=left;" value="tool runs" vertex="1">
+          <mxGeometry height="20" width="120" x="510" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-17" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;align=left;" value="ctx.elicit() fires" vertex="1">
+          <mxGeometry height="20" width="160" x="510" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-18" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;align=left;" value="orchestrator asks user" vertex="1">
+          <mxGeometry height="20" width="180" x="510" y="591" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-19" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;align=left;" value="user responds" vertex="1">
+          <mxGeometry height="20" width="160" x="510" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-20" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=11;align=left;" value="returns result" vertex="1">
+          <mxGeometry height="20" width="160" x="510" y="637" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-21" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-14" style="edgeStyle=orthogonalEdgeStyle;fontFamily=Courier New;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Ntr-GkQIgR_MQodv15UP-13" value="returns">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="640" />
+              <mxPoint x="380" y="640" />
+              <mxPoint x="380" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;" value="Decision node" vertex="1">
+          <mxGeometry height="36" width="160" x="210" y="583" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-28" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="Ntr-GkQIgR_MQodv15UP-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Courier New;" value="Action node" vertex="1">
+          <mxGeometry height="36" width="160" x="210" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-26" edge="1" parent="1" source="Ntr-GkQIgR_MQodv15UP-8" style="edgeStyle=orthogonalEdgeStyle;" target="Ntr-GkQIgR_MQodv15UP-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ntr-GkQIgR_MQodv15UP-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontFamily=Courier New;" value="Result returned to Equne Orchestrator → chat UI" vertex="1">
+          <mxGeometry height="40" width="380" x="170" y="810" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
