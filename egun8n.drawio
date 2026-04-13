@@ -233,9 +233,6 @@
         <mxCell id="miOBHmA825eAL7M7G_0Z-129" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;verticalAlign=middle;" value="User" vertex="1">
           <mxGeometry height="50" width="320" x="1670" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="miOBHmA825eAL7M7G_0Z-130" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=2;fontColor=#666666;" value="&quot;Pay my monthly bills&quot;" vertex="1">
-          <mxGeometry height="25" width="240" x="1710" y="198" as="geometry" />
-        </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-131" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-129" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=#6c8ebf;" target="miOBHmA825eAL7M7G_0Z-132">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -379,6 +376,9 @@
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-172" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=2;fontColor=#666666;" value="&quot;Paid 3 bills. Total: 150,000₮. Remaining balance: 320,000₮&quot;" vertex="1">
           <mxGeometry height="25" width="410" x="1620" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-180" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(102, 102, 102); font-family: Helvetica; font-size: 12px; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;&quot;Pay my monthly bills&quot;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="1840" y="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
