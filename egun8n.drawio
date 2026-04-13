@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
-    <mxGraphModel dx="1543" dy="1039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="1073" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -670,6 +670,95 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="850" y="2005" as="sourcePoint" />
             <mxPoint x="850" y="2680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-252" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="User: &quot;How much did I spend this month?&quot;" vertex="1">
+          <mxGeometry height="35" width="360" x="1620" y="2043" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-253" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-254">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="2103" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-254" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="FastMCP" vertex="1">
+          <mxGeometry height="35" width="160" x="1620" y="2103" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-255" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-256">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="2161" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-256" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Egune LLM interprets intent → &quot;analyze bank transactions&quot;" vertex="1">
+          <mxGeometry height="30" width="440" x="1650" y="2146" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-257" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-258">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="2196" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-258" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="FastMCP Client calls n8n MCP endpoint" vertex="1">
+          <mxGeometry height="30" width="290" x="1650" y="2181" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-259" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-260">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="2243" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-260" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="n8n workflow runs:" vertex="1">
+          <mxGeometry height="35" width="220" x="1650" y="2243" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-261" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-262">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="2301" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-262" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="[MCP Server Trigger] → [HTTP Request: fetch transactions]" vertex="1">
+          <mxGeometry height="30" width="440" x="1680" y="2286" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-263" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-264">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="2336" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-264" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ [Code node: calculate totals] → [Respond]" vertex="1">
+          <mxGeometry height="30" width="330" x="1680" y="2321" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-265" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-266">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="2388" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-266" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Receives result from n8n" vertex="1">
+          <mxGeometry height="30" width="220" x="1650" y="2388" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-267" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-266" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-268">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="2438" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-268" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Returns summary to chat UI" vertex="1">
+          <mxGeometry height="30" width="220" x="1650" y="2423" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-269" edge="1" parent="1" style="endArrow=none;strokeWidth=2;strokeColor=#333333;dashed=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="2078" as="sourcePoint" />
+            <mxPoint x="1620" y="2438" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
