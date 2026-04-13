@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="Page-1" id="bjdVsyUKQkNzbALgbwNX">
-    <mxGraphModel dx="1234" dy="831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="1763" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -512,6 +512,165 @@
         </mxCell>
         <mxCell id="miOBHmA825eAL7M7G_0Z-207" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="multi-step-confirmation.json" vertex="1">
           <mxGeometry height="30" width="310" x="290" y="2373" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-220" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="User: &quot;Pay my monthly bills&quot;" vertex="1">
+          <mxGeometry height="35" width="340" x="850" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-221" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-222">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="2030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-222" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="FastMCP" vertex="1">
+          <mxGeometry height="35" width="160" x="850" y="2030" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-223" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-224">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="2088" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-224" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Egune LLM interprets intent → &quot;pay monthly bills&quot;" vertex="1">
+          <mxGeometry height="30" width="480" x="880" y="2073" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-225" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-226">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="2123" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-226" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="FastMCP Client calls n8n MCP endpoint" vertex="1">
+          <mxGeometry height="30" width="380" x="880" y="2108" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-227" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-228">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="2170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-228" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="n8n workflow runs:" vertex="1">
+          <mxGeometry height="35" width="220" x="880" y="2170" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-229" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-230">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-230" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="[MCP Server Trigger] → [HTTP Request: fetch bills]" vertex="1">
+          <mxGeometry height="30" width="500" x="910" y="2213" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-231" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-232">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2263" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-232" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ [Code node: calls FastMCP confirm payment tool]" vertex="1">
+          <mxGeometry height="30" width="500" x="910" y="2248" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-233" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-234">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-234" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="ctx.elicit() fires" vertex="1">
+          <mxGeometry height="35" width="220" x="880" y="2310" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-235" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-236">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-236" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ Chat UI shows: &quot;Confirm payment of 150,000₮ to 3 billers?&quot;" vertex="1">
+          <mxGeometry height="30" width="560" x="910" y="2353" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-237" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-238">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-238" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ User clicks &quot;Confirm&quot;" vertex="1">
+          <mxGeometry height="30" width="260" x="910" y="2388" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-239" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-240">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2438" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-240" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ Result sent back to n8n Code node" vertex="1">
+          <mxGeometry height="30" width="370" x="910" y="2423" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-241" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-242">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-242" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="n8n workflow continues:" vertex="1">
+          <mxGeometry height="35" width="280" x="880" y="2485" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-243" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-244">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2543" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-244" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="[IF node: approved?] → YES → [HTTP Request: execute payment]" vertex="1">
+          <mxGeometry height="30" width="570" x="910" y="2528" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-245" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-246">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2578" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-246" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="→ [Respond: &quot;Paid 3 bills, total 150,000₮&quot;]" vertex="1">
+          <mxGeometry height="30" width="440" x="910" y="2563" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-247" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0;strokeWidth=1.5;strokeColor=#666666;endArrow=block;endFill=1;" target="miOBHmA825eAL7M7G_0Z-248">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="2630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-248" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Receives result from n8n" vertex="1">
+          <mxGeometry height="30" width="300" x="880" y="2630" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-249" edge="1" parent="1" source="miOBHmA825eAL7M7G_0Z-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=1;entryX=0;entryY=0.5;strokeWidth=1;strokeColor=#999999;endArrow=none;" target="miOBHmA825eAL7M7G_0Z-250">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="2680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-250" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;fontFamily=Courier New;align=left;spacingLeft=10;verticalAlign=middle;" value="Returns confirmation to chat UI" vertex="1">
+          <mxGeometry height="30" width="320" x="880" y="2665" as="geometry" />
+        </mxCell>
+        <mxCell id="miOBHmA825eAL7M7G_0Z-251" edge="1" parent="1" style="endArrow=none;strokeWidth=2;strokeColor=#333333;dashed=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="2005" as="sourcePoint" />
+            <mxPoint x="850" y="2680" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
