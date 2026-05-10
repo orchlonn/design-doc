@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="xwbzlxSM58N1JfO2KW8v">
-    <mxGraphModel dx="2280" dy="1329" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2029" dy="1152" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,16 +169,13 @@
           <mxGeometry height="40" width="207" y="65" as="geometry" />
         </mxCell>
         <mxCell id="qnS_ysuSNeMDgxjqbdYN-226" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;use case&amp;gt;&amp;gt; ChatService" vertex="1">
-          <mxGeometry height="86" width="160" x="794" y="352" as="geometry" />
-        </mxCell>
-        <mxCell id="qnS_ysuSNeMDgxjqbdYN-227" parent="qnS_ysuSNeMDgxjqbdYN-226" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+" vertex="1">
-          <mxGeometry height="26" width="160" y="26" as="geometry" />
+          <mxGeometry height="60" width="160" x="788.5" y="484.23" as="geometry" />
         </mxCell>
         <mxCell id="qnS_ysuSNeMDgxjqbdYN-228" parent="qnS_ysuSNeMDgxjqbdYN-226" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="160" y="52" as="geometry" />
+          <mxGeometry height="8" width="160" y="26" as="geometry" />
         </mxCell>
         <mxCell id="qnS_ysuSNeMDgxjqbdYN-230" parent="qnS_ysuSNeMDgxjqbdYN-226" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ handle_message(text): str" vertex="1">
-          <mxGeometry height="26" width="160" y="60" as="geometry" />
+          <mxGeometry height="26" width="160" y="34" as="geometry" />
         </mxCell>
         <mxCell id="qnS_ysuSNeMDgxjqbdYN-241" parent="1" style="text;html=1;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="egun8n — Hexagonal Architecture (DRIVING side ──── core ──── DRIVEN side)" vertex="1">
           <mxGeometry height="30" width="1360" x="-131" y="2682" as="geometry" />
@@ -457,7 +454,7 @@
             <mxPoint x="1004" y="316" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BXlfh_HYb_vYZX1kuBzg-47" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.912;exitY=0.008;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.005;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" target="BXlfh_HYb_vYZX1kuBzg-19" value="">
+        <mxCell id="BXlfh_HYb_vYZX1kuBzg-47" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-226" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.005;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" target="BXlfh_HYb_vYZX1kuBzg-19" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="953.9999999999999" y="373.02799999999996" as="sourcePoint" />
             <mxPoint x="1057.256" y="336.99899999999997" as="targetPoint" />
