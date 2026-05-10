@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="xwbzlxSM58N1JfO2KW8v">
-    <mxGraphModel dx="1629" dy="1107" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2716" dy="1713" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -123,6 +123,99 @@
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;ElicitOutputPort&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="34" width="121.5" x="1085.75" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="User" vertex="1">
+          <mxGeometry height="720" width="140" x="122" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="ConsoleUI&#xa;(adapters/ui/console.py)" vertex="1">
+          <mxGeometry height="720" width="140" x="302" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="MCPClient&#xa;(transport/mcp/client.py)" vertex="1">
+          <mxGeometry height="720" width="140" x="482" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="FastMCP / Context&#xa;(MCP server process)" vertex="1">
+          <mxGeometry height="720" width="140" x="662" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="ElicitBridge&#xa;(elicit_bridge.py)" vertex="1">
+          <mxGeometry height="720" width="140" x="842" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" value="n8n workflow" vertex="1">
+          <mxGeometry height="720" width="140" x="1022" y="1146" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-7" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;" value="Precondition: tool handler is parked on invoke_webhook(...);&#xa;ElicitBridge has session_id → live Context registered." vertex="1">
+          <mxGeometry height="40" width="860" x="302" y="1206" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="1: POST /elicit-bridge&#xa;{session_id, prompt, fields?, resume_url}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1092" y="1286" as="sourcePoint" />
+            <mxPoint x="912" y="1286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;startArrow=none;align=center;" value="2: 202 Accepted">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="912" y="1326" as="sourcePoint" />
+            <mxPoint x="1092" y="1326" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-10" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="HTTP node unblocks; workflow advances&#xa;to Wait node (parked on resume_url)" vertex="1">
+          <mxGeometry height="40" width="280" x="982" y="1346" as="geometry" />
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-11" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="3: ctx.elicit(message, schema)&#xa;(background task _elicit_and_resume)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="912" y="1416" as="sourcePoint" />
+            <mxPoint x="732" y="1416" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-12" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="4: elicitation/create (over SSE)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="1456" as="sourcePoint" />
+            <mxPoint x="552" y="1456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="5: self._elicit(message, fields)&#xa;(after flattening requestedSchema)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="552" y="1496" as="sourcePoint" />
+            <mxPoint x="372" y="1496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="6: print prompt / form">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="372" y="1536" as="sourcePoint" />
+            <mxPoint x="192" y="1536" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;startArrow=none;align=center;" value="7: stdin reply (empty = cancel)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="192" y="1576" as="sourcePoint" />
+            <mxPoint x="372" y="1576" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;startArrow=none;align=center;" value="8: dict[str, str] | None">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="372" y="1616" as="sourcePoint" />
+            <mxPoint x="552" y="1616" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;startArrow=none;align=center;" value="9: ElicitResult (over SSE)&#xa;None → cancel; dict → accept">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="552" y="1661" as="sourcePoint" />
+            <mxPoint x="732" y="1661" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-18" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;startArrow=none;align=center;" value="10: ctx.elicit() returns">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="1706" as="sourcePoint" />
+            <mxPoint x="912" y="1706" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-19" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;startArrow=none;align=center;" value="11: POST resume_url&#xa;{action, **data}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="912" y="1756" as="sourcePoint" />
+            <mxPoint x="1092" y="1756" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tlsDBFEoo7As1JsVTzQ-20" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="Wait node fires; workflow continues&#xa;with user-provided data" vertex="1">
+          <mxGeometry height="40" width="280" x="982" y="1796" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
