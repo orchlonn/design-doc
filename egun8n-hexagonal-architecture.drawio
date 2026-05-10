@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="xwbzlxSM58N1JfO2KW8v">
-    <mxGraphModel dx="905" dy="615" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1018" dy="692" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,7 +40,7 @@
         <mxCell id="VJPdrng_Lk9BT4ByLujl-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Input Ports&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="146" x="540" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="VJPdrng_Lk9BT4ByLujl-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="port" vertex="1">
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ToolInputPort" vertex="1">
           <mxGeometry height="60" width="179" x="529" y="120" as="geometry" />
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-11" parent="VJPdrng_Lk9BT4ByLujl-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
@@ -73,7 +73,10 @@
         <mxCell id="VJPdrng_Lk9BT4ByLujl-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Output Ports&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="173" x="1060" y="78.46" as="geometry" />
         </mxCell>
-        <mxCell id="VJPdrng_Lk9BT4ByLujl-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; PromptOutputPort" vertex="1">
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-44" edge="1" parent="1" source="VJPdrng_Lk9BT4ByLujl-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;endSize=10;" target="VJPdrng_Lk9BT4ByLujl-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; ToolOutputPort" vertex="1">
           <mxGeometry height="86" width="200" x="1046" y="275" as="geometry" />
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-24" parent="VJPdrng_Lk9BT4ByLujl-23" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
@@ -99,6 +102,27 @@
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Driven Side&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="320" x="1054" y="9.46" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;ToolOutputPort&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="34" width="121.5" x="1085.25" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-45" edge="1" parent="1" source="VJPdrng_Lk9BT4ByLujl-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;endSize=10;" target="VJPdrng_Lk9BT4ByLujl-50" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-46" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; ElicitOutputPort" vertex="1">
+          <mxGeometry height="86" width="200" x="1046.5" y="513" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-47" parent="VJPdrng_Lk9BT4ByLujl-46" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-48" parent="VJPdrng_Lk9BT4ByLujl-46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ list_tools(): Tools&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="26" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-49" parent="VJPdrng_Lk9BT4ByLujl-46" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ call_tool(name, arguments): Tool" vertex="1">
+          <mxGeometry height="26" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VJPdrng_Lk9BT4ByLujl-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;ElicitOutputPort&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="34" width="121.5" x="1085.75" y="431" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
