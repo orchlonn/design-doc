@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="xwbzlxSM58N1JfO2KW8v">
-    <mxGraphModel dx="2716" dy="1713" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1098" dy="441" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="1700" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,15 +87,6 @@
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-25" parent="VJPdrng_Lk9BT4ByLujl-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ call_tool(name, arguments): Tool" vertex="1">
           <mxGeometry height="26" width="200" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="VJPdrng_Lk9BT4ByLujl-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;gradientColor=none;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="690" width="120" x="1317" y="58.46" as="geometry" />
-        </mxCell>
-        <mxCell id="VJPdrng_Lk9BT4ByLujl-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Adapters&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="1347" y="78.46" as="geometry" />
-        </mxCell>
-        <mxCell id="VJPdrng_Lk9BT4ByLujl-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;adapter&amp;gt;&amp;gt;&lt;div&gt;Handle Message&lt;/div&gt;" vertex="1">
-          <mxGeometry height="34" width="103" x="1325.5" y="121.46" as="geometry" />
         </mxCell>
         <mxCell id="VJPdrng_Lk9BT4ByLujl-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Driving Side&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="320" x="342" y="11" as="geometry" />
@@ -216,6 +207,351 @@
         </mxCell>
         <mxCell id="4tlsDBFEoo7As1JsVTzQ-20" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="Wait node fires; workflow continues&#xa;with user-provided data" vertex="1">
           <mxGeometry height="40" width="280" x="982" y="1796" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacing=8;" value="Legend&#xa;&#xa;Green = DRIVING adapter (world calls in)&#xa;Purple = DRIVEN adapter (app calls out)&#xa;Yellow = ElicitBridge (BOTH — driving HTTP route + driven ElicitGateway registry)&#xa;Blue = actor / external system" vertex="1">
+          <mxGeometry height="80" width="600" x="-235" y="2179" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="User" vertex="1">
+          <mxGeometry height="1240" width="160" x="-235" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="ConsoleUI&#xa;[DRIVING — UI port]&#xa;adapters/ui/console.py" vertex="1">
+          <mxGeometry height="1240" width="160" x="-55" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="EguneCompatibleClient&#xa;[DRIVEN — LLMClient port]&#xa;adapters/llm_clients/" vertex="1">
+          <mxGeometry height="1240" width="160" x="125" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="MCPClient&#xa;[DRIVEN — no port]&#xa;adapters/transport/mcp/client.py" vertex="1">
+          <mxGeometry height="1240" width="160" x="305" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Dispatcher&#xa;[DRIVING — ToolRegistry port]&#xa;adapters/transport/mcp/dispatcher.py" vertex="1">
+          <mxGeometry height="1240" width="160" x="485" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="N8nBackend handler&#xa;[DRIVEN — WorkflowBackend port]&#xa;adapters/workflow_backends/n8n/" vertex="1">
+          <mxGeometry height="1240" width="160" x="665" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="ElicitBridge&#xa;[DRIVING route + DRIVEN ElicitGateway]&#xa;adapters/transport/mcp/elicit_bridge.py" vertex="1">
+          <mxGeometry height="1240" width="160" x="845" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="n8n workflow&#xa;(external)" vertex="1">
+          <mxGeometry height="1240" width="160" x="1025" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="LLM HTTP API&#xa;(external)" vertex="1">
+          <mxGeometry height="1240" width="160" x="1205" y="2279" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-11" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-2" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-155" y="2429" />
+              <mxPoint x="25" y="2429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-12" parent="1" style="text;html=1;align=left;" value="1. type &quot;check my balance&quot;  (DRIVES the agent)" vertex="1">
+          <mxGeometry height="20" width="380" x="-145" y="2409" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-13" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-3" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="2469" />
+              <mxPoint x="205" y="2469" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-14" parent="1" style="text;html=1;align=left;" value="2. llm.chat(msg, execute_tool=mcp.call_tool)" vertex="1">
+          <mxGeometry height="20" width="380" x="30" y="2449" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-15" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-4" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="2509" />
+              <mxPoint x="1285" y="2509" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-16" parent="1" style="text;html=1;align=left;" value="3. POST chat completions  →  returns: tool_call(check_account_balance, {})" vertex="1">
+          <mxGeometry height="20" width="700" x="215" y="2489" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-17" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-4" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="2549" />
+              <mxPoint x="385" y="2549" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-18" parent="1" style="text;html=1;align=left;" value="4. execute_tool(name, args)" vertex="1">
+          <mxGeometry height="20" width="280" x="215" y="2529" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-19" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-5" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="2589" />
+              <mxPoint x="565" y="2589" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-20" parent="1" style="text;html=1;align=left;" value="5. JSON-RPC tools/call  →  Dispatcher.dispatch  (DRIVES the server)" vertex="1">
+          <mxGeometry height="20" width="500" x="395" y="2569" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-21" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-6" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="565" y="2629" />
+              <mxPoint x="745" y="2629" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-22" parent="1" style="text;html=1;align=left;" value="6. handler(args, ctx)" vertex="1">
+          <mxGeometry height="20" width="280" x="575" y="2609" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-23" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-7" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="2669" />
+              <mxPoint x="925" y="2669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-24" parent="1" style="text;html=1;align=left;" value="7. gateway.register(session_id, ctx)   [DRIVEN — ElicitGateway port]" vertex="1">
+          <mxGeometry height="20" width="500" x="755" y="2649" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-25" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-7" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="2709" />
+              <mxPoint x="1105" y="2709" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-26" parent="1" style="text;html=1;align=left;" value="8. POST /webhook/check_account_balance  (stays open until Respond to Webhook)" vertex="1">
+          <mxGeometry height="20" width="600" x="755" y="2689" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-27" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-9" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;strokeColor=#b85450;strokeWidth=2;" target="qnS_ysuSNeMDgxjqbdYN-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1105" y="2769" />
+              <mxPoint x="925" y="2769" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-28" parent="1" style="text;html=1;align=left;fontStyle=1;" value="9. POST /elicit-bridge {session_id, prompt, fields, resume_url}   ★ DRIVING entry ★" vertex="1">
+          <mxGeometry height="20" width="600" x="625" y="2749" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-29" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-8" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="2809" />
+              <mxPoint x="1105" y="2809" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-30" parent="1" style="text;html=1;align=left;" value="10. 202 Accepted (background task continues)" vertex="1">
+          <mxGeometry height="20" width="380" x="935" y="2789" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-31" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-8" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;strokeColor=#9673a6;strokeWidth=2;" target="qnS_ysuSNeMDgxjqbdYN-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="2869" />
+              <mxPoint x="385" y="2869" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-32" parent="1" style="text;html=1;align=left;" value="11. ctx.elicit(message, schema)  →  SSE event to agent" vertex="1">
+          <mxGeometry height="20" width="500" x="395" y="2849" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-33" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-5" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="2909" />
+              <mxPoint x="25" y="2909" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-34" parent="1" style="text;html=1;align=left;" value="12. ui.elicit(message, fields)" vertex="1">
+          <mxGeometry height="20" width="280" x="35" y="2889" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-35" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-3" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="2949" />
+              <mxPoint x="-155" y="2949" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-36" parent="1" style="text;html=1;align=left;" value="13. render form prompts" vertex="1">
+          <mxGeometry height="20" width="200" x="-145" y="2929" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-37" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-2" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-155" y="2989" />
+              <mxPoint x="25" y="2989" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-38" parent="1" style="text;html=1;align=left;" value="14. fields filled in" vertex="1">
+          <mxGeometry height="20" width="200" x="-145" y="2969" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-39" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-3" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="3029" />
+              <mxPoint x="925" y="3029" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-40" parent="1" style="text;html=1;align=left;" value="15. ElicitResult propagates back to ElicitBridge (via MCPClient → SSE response)" vertex="1">
+          <mxGeometry height="20" width="700" x="35" y="3009" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-41" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-8" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="3069" />
+              <mxPoint x="1105" y="3069" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-42" parent="1" style="text;html=1;align=left;" value="16. POST resume_url {action:&quot;accept&quot;, ...fields}" vertex="1">
+          <mxGeometry height="20" width="380" x="935" y="3049" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-43" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-9" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1105" y="3109" />
+              <mxPoint x="745" y="3109" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-44" parent="1" style="text;html=1;align=left;" value="17. Respond to Webhook  →  hop 8 returns result body" vertex="1">
+          <mxGeometry height="20" width="380" x="755" y="3089" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-45" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-7" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;" target="qnS_ysuSNeMDgxjqbdYN-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="3149" />
+              <mxPoint x="925" y="3149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-46" parent="1" style="text;html=1;align=left;" value="18. gateway.unregister(session_id)" vertex="1">
+          <mxGeometry height="20" width="280" x="755" y="3129" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-47" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-7" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="3189" />
+              <mxPoint x="565" y="3189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-48" parent="1" style="text;html=1;align=left;" value="19. return result string" vertex="1">
+          <mxGeometry height="20" width="280" x="575" y="3169" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-49" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-6" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="565" y="3229" />
+              <mxPoint x="385" y="3229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-50" parent="1" style="text;html=1;align=left;" value="20. SSE response (tools/call result)" vertex="1">
+          <mxGeometry height="20" width="280" x="395" y="3209" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-51" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-5" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="3269" />
+              <mxPoint x="205" y="3269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-52" parent="1" style="text;html=1;align=left;" value="21. tool result string" vertex="1">
+          <mxGeometry height="20" width="280" x="215" y="3249" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-53" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-4" style="endArrow=block;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="3309" />
+              <mxPoint x="1285" y="3309" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-54" parent="1" style="text;html=1;align=left;" value="22. POST chat completions (with tool result)  →  returns final assistant text" vertex="1">
+          <mxGeometry height="20" width="700" x="215" y="3289" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-55" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-4" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="3349" />
+              <mxPoint x="25" y="3349" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-56" parent="1" style="text;html=1;align=left;" value="23. final reply text" vertex="1">
+          <mxGeometry height="20" width="280" x="35" y="3329" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-57" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-3" style="endArrow=open;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startSize=8;endSize=8;dashed=1;" target="qnS_ysuSNeMDgxjqbdYN-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="3389" />
+              <mxPoint x="-155" y="3389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-58" parent="1" style="text;html=1;align=left;" value="24. print reply" vertex="1">
+          <mxGeometry height="20" width="200" x="-145" y="3369" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-59" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" value="DRIVING entry #1&#xa;(user → ConsoleUI via UI port)" vertex="1">
+          <mxGeometry height="50" width="180" x="-235" y="3449" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-60" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" value="DRIVING entry #2&#xa;(MCPClient → Dispatcher&#xa;via ToolRegistry port)" vertex="1">
+          <mxGeometry height="50" width="180" x="485" y="3449" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-61" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="DRIVING entry #3&#xa;(n8n → ElicitBridge&#xa;via /elicit-bridge HTTP route)" vertex="1">
+          <mxGeometry height="50" width="180" x="845" y="3449" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;gradientColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="690" width="233" x="1314" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Output Ports&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="173" x="1344" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-69" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;endSize=10;" target="qnS_ysuSNeMDgxjqbdYN-74" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-70" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;adapter&amp;gt;&amp;gt; ElicitBridgeAdapter" vertex="1">
+          <mxGeometry height="102" width="205" x="1328" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-71" parent="qnS_ysuSNeMDgxjqbdYN-70" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="205" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-72" parent="qnS_ysuSNeMDgxjqbdYN-70" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ handle():&amp;nbsp;JSONResponse" vertex="1">
+          <mxGeometry height="26" width="205" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-73" parent="qnS_ysuSNeMDgxjqbdYN-70" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ _elicit_and_resume(ctx, prompt, resume_url, fields, http):&amp;nbsp;" vertex="1">
+          <mxGeometry height="42" width="205" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;ElicitAdapter&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="34" width="121.5" x="1369.75" y="148.99999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-75" edge="1" parent="1" source="qnS_ysuSNeMDgxjqbdYN-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;endSize=10;" target="qnS_ysuSNeMDgxjqbdYN-80" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-76" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; ElicitOutputPort" vertex="1">
+          <mxGeometry height="86" width="200" x="1330.5" y="514.54" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-77" parent="qnS_ysuSNeMDgxjqbdYN-76" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-78" parent="qnS_ysuSNeMDgxjqbdYN-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ list_tools(): Tools" vertex="1">
+          <mxGeometry height="26" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-79" parent="qnS_ysuSNeMDgxjqbdYN-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ call_tool(name, arguments): Tool" vertex="1">
+          <mxGeometry height="26" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qnS_ysuSNeMDgxjqbdYN-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;ElicitOutputPort&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="34" width="121.5" x="1369.75" y="432.53999999999996" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
