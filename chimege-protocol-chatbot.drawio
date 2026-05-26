@@ -74,7 +74,7 @@
         <mxCell id="rvnugfWhwqTv-A1NwOuD-33" edge="1" parent="1" source="rvnugfWhwqTv-A1NwOuD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rvnugfWhwqTv-A1NwOuD-32" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rvnugfWhwqTv-A1NwOuD-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Retrive data from database" vertex="1">
+        <mxCell id="rvnugfWhwqTv-A1NwOuD-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Retrive data from vector database" vertex="1">
           <mxGeometry height="60" width="120" x="370" y="760" as="geometry" />
         </mxCell>
         <mxCell id="rvnugfWhwqTv-A1NwOuD-31" edge="1" parent="1" source="rvnugfWhwqTv-A1NwOuD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rvnugfWhwqTv-A1NwOuD-21">
