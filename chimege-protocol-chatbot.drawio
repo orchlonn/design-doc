@@ -84,7 +84,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rvnugfWhwqTv-A1NwOuD-34" connectable="0" parent="rvnugfWhwqTv-A1NwOuD-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Max of 3 times" vertex="1">
+        <mxCell id="rvnugfWhwqTv-A1NwOuD-34" connectable="0" parent="rvnugfWhwqTv-A1NwOuD-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Maximum iteration&lt;div&gt;of 3 times&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.0225" y="2" as="geometry">
             <mxPoint x="48" y="2" as="offset" />
           </mxGeometry>
